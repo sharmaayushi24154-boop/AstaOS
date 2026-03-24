@@ -1,0 +1,3 @@
+@echo off
+echo Starting AstraOS backend and frontend in parallel...
+npx concurrently --kill-others-on-fail "npm --prefix astraos-backend run dev" "npm --prefix astraos-frontend run dev"

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AstraOS – Offline AI Operating System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0d1117;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #58a6ff;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10%;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 3rem;
+      color: #58a6ff;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      color: #ccc;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #58a6ff;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1f6feb;
+    }
+
+    .hero img {
+      width: 400px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: #1f2937;
+    }
+
+    .card h3 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      color: #ccc;
+      max-width: 700px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #161b22;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>AstraOS</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Your Offline AI Operating System</h2>
+    <p>
+      AstraOS is a fully offline AI-powered personal assistant that runs entirely on-device.
+      Experience fast, private, and intelligent interactions without internet dependency.
+    </p>
+    <button class="btn">Get Started</button>
+  </div>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="AI">
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <h2 style="text-align:center; margin-bottom:40px;">Features</h2>
+
+  <div class="features">
+
+    <div class="card">
+      <h3>🎤 Voice Interaction</h3>
+      <p>Speak naturally and control your system using real-time speech-to-text processing.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Local LLM</h3>
+      <p>All AI processing happens on-device ensuring complete privacy and zero latency.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔊 Text-to-Speech</h3>
+      <p>Get natural spoken responses for a seamless conversational experience.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Offline First</h3>
+      <p>No internet needed. AstraOS works anytime, anywhere.</p>
+    </div>
+
+    <div class="card">
+      <h3>📚 Context Memory</h3>
+      <p>Remembers interactions and provides context-aware responses.</p>
+    </div>
+
+    <div class="card">
+      <h3>💻 OS-like Commands</h3>
+      <p>Execute tasks like planning, summarizing, and more using simple commands.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About AstraOS</h2>
+  <p>
+    AstraOS is built using the RunAnywhere SDK to showcase the power of fully local AI systems.
+    It integrates speech recognition, local LLM reasoning, and speech synthesis to create a real-time assistant
+    that behaves like an operating system.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 AstraOS | Built with ❤️ for Offline AI Revolution</p>
+</footer>
+
+</body>
+</html>
